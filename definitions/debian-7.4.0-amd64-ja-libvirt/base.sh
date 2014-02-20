@@ -8,5 +8,5 @@ echo 'vagrant ALL=NOPASSWD:ALL' > /etc/sudoers.d/vagrant
 
 # Remove 5s grub timeout to speed up booting
 mv /etc/default/grub /etc/default/grub.orig
-sed -e '/TIMEOUT/c\GRUB_TIMEOUT=0' > /etc/default/grub
+sed -e '/TIMEOUT/c\GRUB_TIMEOUT=0' /etc/default/grub.orig > /etc/default/grub
 update-grub
