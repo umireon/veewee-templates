@@ -18,7 +18,7 @@ Veewee::Session.declare({
   :ssh_user => "vagrant",
   :ssh_password => "vagrant",
   :sudo_cmd => "echo '%p'|sudo -S sh '%f'",
-  :shutdown_cmd => "shutdown -P now",
+  :shutdown_cmd => "poweroff",
   :postinstall_files => [
     "base.sh",
     "vagrant.sh",
